@@ -1,0 +1,73 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+    color: #eee;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5rem;
+    color:#eee;
+    margin: 0;
+}
+
+header{
+    position:fixed;
+    height:85px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a{
+    margin-right: 20px;
+    color: #eee;
+    text-decoration: none;
+}
+
+.logo{
+    
+
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background: url("/public/img/DieHardPoster.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
