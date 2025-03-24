@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="Script.js" defer></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="Scripts.js"></script>
 
 
 </head>
@@ -29,14 +36,36 @@
     </header>
 
     <main>
+    <!-- Swiper -->
+    <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide" data-color="#ff0000"><img src="public/img/Bloodborne.jpg" /></div>
+          <div class="swiper-slide" data-color="#ff00ff"><img src="public/img/DarkSouls1.png" /></div>
+          <div class="swiper-slide" data-color="#00ff00"><img src="public/img/Firewatch Poster.jpg" /></div>
+          <div class="swiper-slide" data-color="#00ffnn"><img src="public/img/LastOfUs.jpg" /></div>
+          <div class="swiper-slide" data-color="#ff0f00"><img src="public/img/StarWarsBobaFett.jpg" /></div>
+          <div class="swiper-slide" data-color="#990f99"><img src="public/img/StarWarsC3P0.jpg" /></div>
+          <div class="swiper-slide"><img src="public/img/TheDarkKnightRises.jpg" /></div>
+          <div class="swiper-slide"><img src="public/img/DieHardPoster.png" /></div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+
+    <!-- Next page -->
+     
+
+
         <section class ="hero">
             <div class="hero-content">
                  <h1>DFS 219</h1>
                  <p>DFS 219 is a web development course</p>
             </div>
         </section>
-    </main>
-    <main>
+
+
+    
+
         <section class ="hero">
             <div class="hero-content">
                  <h1>DFS 219</h1>
@@ -45,4 +74,7 @@
         </section>
     </main>
 </body>
+
+
+
 </html>

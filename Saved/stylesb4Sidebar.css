@@ -1,0 +1,106 @@
+html, body {
+      position: relative;
+      height: 100%;
+}
+
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #eee;
+    font-size: 3rem;
+    margin: 0;
+    font-weight: 700;
+}
+
+p {
+    font-size: 1.5rem;
+    color:#eee;
+    margin: 0;
+}
+
+header{
+    position:fixed;
+    height:85px;
+    width: 100%;
+    background: rgba(0,0,0,0.4);
+    backdrop-filter: blur(10px);
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    padding: 0 30px;
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+}
+
+nav ul li a{
+    margin-right: 20px;
+    color: #eee;
+    text-decoration: none;
+}
+
+.logo a{
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+}
+
+.hero {
+    width: 100%;
+    height: 100vh;
+    background-color: red;
+    background: url("/public/img/DieHardPoster.png");
+    background-size:cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+}
+
+.hero-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+
+.swiper {
+    width: 50%;
+    height: 700px;
+    margin: 0 auto; /* Center the Swiper horizontally */
+
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+
+    
+}

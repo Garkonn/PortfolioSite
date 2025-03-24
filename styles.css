@@ -1,8 +1,16 @@
+html, body {
+      position: relative;
+      height: 100%;
+}
+
 body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    display: flex;
 }
 
 h1 {
@@ -18,38 +26,62 @@ p {
     margin: 0;
 }
 
-header{
-    position:fixed;
-    height:85px;
-    width: 100%;
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 85px; /* Adjust the width as needed */
+    height: 100%; /* Make the header take up the full height of the screen */
     background: rgba(0,0,0,0.4);
     backdrop-filter: blur(10px);
+    display: flex;
+    flex-direction: column; /* Stack the navigation elements vertically */
+    align-items: center; /* Center the navigation elements horizontally */
+    padding: 20px 0; /* Add some padding for spacing */
 }
 
-nav{
+main {
+    margin-left: 85px; /* Offset the main content to the right of the sidebar */
+    padding: 20px;
+    width: calc(100% - 85px); /* Adjust the width to account for the sidebar */
+}
+
+nav {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack the navigation elements vertically */
+    justify-content: center;
     align-items: center;
     height: 100%;
-    padding: 0 30px;
+    padding: 0;
+    gap: 50px;;
 }
 
-nav ul{
+nav ul {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column; /* Stack the list items vertically */
+    justify-content: center;
     align-items: center;
     list-style: none;
+    padding: 0;
+    margin: 0;
+    gap: 20px;
 }
 
-nav ul li a{
-    margin-right: 20px;
+nav ul li {
+    margin-bottom: 20px;
+}
+
+nav ul li a {
     color: #eee;
     text-decoration: none;
 }
 
-.logo{
-    
-
+.logo a {
+    color: #eee;
+    font-size: 2rem;
+    font-weight: 700;
+    text-decoration: none;
+    margin-bottom: 20px;
 }
 
 .hero {
@@ -70,4 +102,36 @@ nav ul li a{
     align-items: center;
     height: 100%;
     width: 100%;
+}
+
+
+.swiper {
+    width: 90vw;
+    height: 70vh; 
+    margin: 20px auto; 
+    overflow: visible;
+    transition: background-color 0.4s ease;
+}
+
+.swiper-slide {
+    background-position: center;
+    background-size: cover;
+    width: 100%; 
+    height: 100%;
+    transition: transform 0.4s ease;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.swiper-slide-active {
+    transform: scale(1.8);
+}
+
+.swiper-slide {
+    transform: scale(0.8); /* Scale down the non-active slides */
 }
