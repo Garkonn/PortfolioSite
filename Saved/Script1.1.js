@@ -2,9 +2,9 @@ var swiper = new Swiper(".mySwiper", {
     effect: "coverflow",
     grabCursor: true,
     centeredSlides: true,
-    slidesPerView: 1,
-    spaceBetween: 10,
-    loop: true,
+    slidesPerView: 3, // Show 3 slides at once
+    spaceBetween: 30, // Space between slides
+    loop: true, // Enable looping
 
     coverflowEffect: {
         rotate: 20,
@@ -21,13 +21,6 @@ var swiper = new Swiper(".mySwiper", {
     navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
-    },
-
-    breakpoints: {
-        720: {
-            slidesPerView: 1.5, // Show 3 slides at once
-            spaceBetween: 0
-        }
     },
 
     on: {
