@@ -1,3 +1,4 @@
+<!-- filepath: /Users/graysonarndt/Documents/GITS/PortfolioSite/Portfolio.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -5,23 +6,67 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #E5E5DC;
+        }
+
+        header {
+            background: rgba(0, 0, 0, 0.4);
+        }
+
+        nav ul li a {
+            color: #000;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>Welcome to My Portfolio</h1>
+        <nav>
+            <div class="logo">
+                <a href="index.html"><img src="public/img/logo.png" /></a>
+            </div>
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li>
+                    <a href="Portfolio.html">Portfolio</a>
+                </li>
+                <li>
+                    <a href="contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>
     </header>
+
     <main>
-        <section>
-            <h2>About Me</h2>
-            <p>Write something about yourself here.</p>
-        </section>
-        <section>
-            <h2>Projects</h2>
-            <p>Showcase your projects here.</p>
-        </section>
+        <div class="gallery">
+            <div class="column">
+                <img src="public/img/batman2.jpg" alt="Batman">
+                <img src="public/img/Bloodborne.jpg" alt="Bloodborne">
+                <img src="public/img/DarkSouls1.png" alt="Dark Souls">
+                <img src="public/img/DieHardPoster.png" alt="Die Hard">
+            </div>
+            <div class="column">
+                <img src="public/img/Firewatch Poster.jpg" alt="Firewatch">
+                <img src="public/img/HowlsMovingCastle.jpg" alt="Howl's Moving Castle">
+                <img src="public/img/KingKong.jpg" alt="King Kong">
+                <img src="public/img/LastOfUs.jpg" alt="Last of Us">
+            </div>
+            <div class="column">
+                <img src="public/img/LordoftheRings.jpeg" alt="Lord of the Rings">
+                <img src="public/img/Resistance3.jpeg" alt="Resistance 3">
+                <img src="public/img/Rubber.jpeg" alt="Rubber">
+                <img src="public/img/SpiritedAway.jpg" alt="Spirited Away">
+            </div>
+            <div class="column">
+                <img src="public/img/StarWarsBobaFett.jpg" alt="Star Wars Boba Fett">
+                <img src="public/img/StarWarsC3P0.jpg" alt="Star Wars C3P0">
+                <img src="public/img/TheDarkKnightRises.jpg" alt="The Dark Knight Rises">
+                <img src="public/img/woodshed.jpg" alt="Woodshed">
+            </div>
+        </div>
     </main>
-    <footer>
-        <p>&copy; 2023 Your Name</p>
-    </footer>
 </body>
-</html>
+</html></div>
