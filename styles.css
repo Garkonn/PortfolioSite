@@ -276,9 +276,18 @@ nav ul li a {
     width: 50px;
     /* background-image: url('public/img/Right Arrow.jpg'); */
 }
+.swiper-button-prev img{
+    height: 50px;
+    width: 50px;
+    /* background-image: url('public/img/Right Arrow.jpg'); */
+}
 
 .swiper-button-prev {
-    left: 90px!important;
+    right: 70vw!important;
+}
+
+.swiper-button-next {
+    left: 90vw!important;
 }
 
 
