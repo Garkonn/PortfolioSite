@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <script src="Script.js" defer></script>
+
     <style>
         body {
             background-color: #E5E5DC;
@@ -44,7 +46,7 @@
         <div class="gallery">
             <div class="column">
                 <div class="image-container">
-                    <img src="public/img/batman2.jpg" alt="Batman">
+                    <img src="public/img/batman2.jpg" alt="Batman" data-text="This is Batman.">
                     <span class="hover-text">Batman</span>
                 </div>
                 <div class="image-container">
@@ -117,7 +119,14 @@
             </div>  
         </div>
 
-
+        <!-- Modal Structure -->
+        <div id="image-modal" class="modal">
+            <div class="modal-content">
+                <img id="modal-image" src="" alt="">
+                <p id="modal-text"></p>
+            </div>
+            <span class="modal-close">&times;</span>
+        </div>
     </main>
 </body>
 </html>
