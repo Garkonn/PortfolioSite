@@ -6,6 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Info</title>
     <link rel="stylesheet" href="styles.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Judson:ital,wght@0,400;0,700;1,400&family=Prata&family=Varela&display=swap" rel="stylesheet">
+
+    <script src="Script.js" defer></script>
+
+
+
+
     <style>
         body {
             background-color: #E5E5DC;
@@ -14,18 +24,23 @@
         nav ul li a {
             color: #000;
         }
+
+        .info-container {
+            display: flex;
+            flex-direction: column;
+        }
     </style>
 </head>
 <body>
     <header>
         <nav>
             <div class="logo">
-                <a href="index.html"><img src="public/img/logo.png" alt="Logo"></a>
+                <a href="Index.html"><img src="public/img/logo.png" alt="Logo"></a>
             </div>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="Portfolio.html">Portfolio</a></li>
-                <li><a href="Info.html">Info</a></li>
+                <li><a href="Index.html">Home</a></li>
+                <li><a href="Portfolio.html">Gallery</a></li>
+                <li><a href="Info.html" class="active">Info</a></li>
             </ul>
         </nav>
     </header>
@@ -33,24 +48,27 @@
     <main>
         <div class="info-container">
             <section class="about">
-                <h2>About the Artist</h2>
+                <h2>Olly Moss</h2>
                 <p>
-                    Lorem ipsum dolor sit amet consectetur adipiscing elit. Ex sapien vitae pellentesque sem placerat in id. Pretium tellus duis convallis tempus leo eu aenean. Urna tempor pulvinar vivamus fringilla lacus nec metus. </p>
+                    Olly Moss is a British graphic artist known for his minimalist, pop culture-inspired poster designs. He gained fame through his work with Mondo, creating art for Star Wars, The Lord of the Rings, and more.</p>
                 <p>
-                    Dis parturient montes nascetur ridiculus mus donec rhoncus. Nulla molestie mattis scelerisque maximus eget fermentum odio. Purus est efficitur laoreet mauris pharetra vestibulum fusce.
+                    Moss also designed the cover for Resistance 3 and co-founded the game studio Campo Santo, serving as art director for Firewatch. After Campo Santo was acquired, he joined Valve and worked on Half-Life: Alyx. His distinct visual style blends clever design with nostalgic imagery, making him a standout figure in both graphic design and video game art.
                 </p>
             </section>
 
             <section class="contact">
                 <h2>Contact</h2>
                 <ul>
-                    <li>Email: <a href="mailto:artist@example.com">artist@example.com</a></li>
-                    <li>Phone: <a href="tel:+1234567890">+1 (234) 567-890</a></li>
-                    <li>Instagram: <a href="https://instagram.com/artistprofile" target="_blank">@artistprofile</a></li>
-                    <li>Twitter: <a href="https://twitter.com/artistprofile" target="_blank">@artistprofile</a></li>
+                    <li>Email: <a href="mailto:Olly@ollymoss.com">Olly@ollymoss.com</a></li>
+                    <li>Instagram: <a href="https://www.instagram.com/ollymoss/" target="_blank">@ollymoss</a></li>
+                    <li>Twitter: <a href="https://x.com/ollymoss" target="_blank">@ollymoss</a></li>
                 </ul>
             </section>
         </div>
     </main>
+    <footer>
+        <a href="https://www.moss.fm/" target="_blank">Store</a>
+        <p>&copy; 2023 Olly Moss. All rights reserved.</p>
+    </footer>
 </body>
 </html>
