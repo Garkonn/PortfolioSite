@@ -6,21 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <link rel="stylesheet" href="styles.css">
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js" defer></script>
     <script src="Script.js" defer></script>
 
-    <style>
-        body {
-            background-color: #E5E5DC;
-        }
-
-        header {
-        background: rgba(255, 255, 255, 0.7) !important;
-        }
-
-        nav ul li a {
-            color: #000;
-        }
-    </style>
 </head>
 <body>
     <header>
@@ -46,26 +37,26 @@
         <div class="gallery">
             <div class="column">
                 <div class="image-container">
-                    <img src="public/img/batman2.jpg" alt="Batman" data-text="This is Batman.">
+                    <img src="public/img/batman2.jpg" alt="Batman" data-text="Client: DC Comics" data-description="Art director: Mark Chiarello">
                     <span class="hover-text">Batman</span>
                 </div>
                 <div class="image-container">
-                    <img src="public/img/Bloodborne.jpg" alt="Bloodborne">
+                    <img src="public/img/Bloodborne.jpg" alt="Bloodborne" data-text="Client: Mondo" data-description="Partner: Sony">
                     <span class="hover-text">Bloodborne</span>
                 </div>
                 <div class="image-container">
-                    <img src="public/img/DarkSouls1.png" alt="Dark Souls">
+                    <img src="public/img/DarkSouls1.png" alt="Dark Souls" data-text="Client: Mondo" data-description="Partner: Sony">
                     <span class="hover-text">Dark Souls</span>
                 </div>
                 <div class="image-container">
-                    <img src="public/img/DieHardPoster.png" alt="Die Hard">
+                    <img src="public/img/DieHardPoster.png" alt="Die Hard" data-text="Clients: Mondo and 20th Century Fox" data-description="Limited edition">
                     <span class="hover-text">Die Hard</span>
                 </div>
             </div>
 
             <div class="column">
                 <div class="image-container">
-                    <img src="public/img/Firewatch Poster.jpg" alt="Firewatch">
+                    <img src="public/img/Firewatch Poster.jpg" alt="Firewatch" data-text="Co-director and art director" data-description="for Firewatch">
                     <span class="hover-text">Firewatch</span>
                 </div>
                 <div class="image-container">
@@ -83,7 +74,7 @@
             </div>
             <div class="column">
                 <div class="image-container">
-                    <img src="public/img/LordoftheRings.jpeg" alt="Lord of the Rings">
+                    <img src="public/img/LordoftheRings.jpeg" alt="Lord of the Rings" data-text="Clients: Mondo and Warner Bros." data-description="Poster for The Lord of the Rings trilogy">
                     <span class="hover-text">Lord of the Rings</span>
                 </div>
                 <div class="image-container">
@@ -101,7 +92,7 @@
             </div>
             <div class="column">
                 <div class="image-container">
-                    <img src="public/img/SpiritedAway.jpg" alt="Spirited Away">
+                    <img src="public/img/SpiritedAway.jpg" alt="Spirited Away" data-text="Clients: Mondo and Studio Ghibli" data-description="Exclusive to San Diego Comic Con 2013.">
                     <span class="hover-text">Spirited Away</span>
                 </div>
                 <div class="image-container">
@@ -124,6 +115,7 @@
             <div class="modal-content">
                 <img id="modal-image" src="" alt="">
                 <p id="modal-text"></p>
+                <p id="modal-description" class="modal-description"></p> <!-- Added description -->
             </div>
             <span class="modal-close">&times;</span>
         </div>
