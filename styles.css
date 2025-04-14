@@ -172,13 +172,13 @@ footer {
     align-items: center;
     font-family: "Judson", serif;
     border-top: 2px solid #fff; /* Border at the top */
-    letter-spacing: 0.05rem;
+    letter-spacing: 0.0rem;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.2); /* Shadow above the footer */
     z-index: 10; /* Above all else except the navbar */
 }
 
 footer p {
-    font-size: 1.2rem;
+    font-size: 1rem;
     margin: 0;
     font-style: italic;
     padding: 0 15px;
@@ -373,6 +373,7 @@ footer a:hover {
     align-items: center;
 }
 
+
 .image-container:hover .hover-text{
     opacity: 1;
     transform: translate(-50%, -50%);
@@ -448,6 +449,7 @@ footer a:hover {
     color: #000;
     z-index: 4;
     text-shadow: #fff 0px 0px 1px;
+    font-family: "Judson", serif;
 }
 
 .modal-close {
@@ -611,6 +613,10 @@ footer a:hover {
         width: 100%;
     }
 
+    .swiper-slide img {
+        height: 80%;
+    }
+
     .info-container {
         margin-left: 0px;
         margin-right: 25px;
@@ -618,6 +624,10 @@ footer a:hover {
 
     .gallery {
         margin-left: 0px;
+    }
+
+    footer {
+        height: 40px;
     }
 
     footer a {
